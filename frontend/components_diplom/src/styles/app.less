@@ -1,0 +1,52 @@
+// compress: false
+
+@import 'vars';
+@import 'aside';
+@import 'dataView';
+@import 'viewHeaders';
+@import 'viewHead';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    height: 100%;
+    color: rgb(225, 225, 225);
+
+
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html, body {
+
+    background: @mainBackground;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#root {
+    // display: flex;
+    // justify-content: center;
+}
+
+.App {
+    width: 100%;
+    display: flex;
+}
+
+.post {
+    display: flex;
+    padding: 15px;
+    border: 2px solid black;
+    margin-top: 15px;
+    max-height: 15%;
+    margin: 20px;
+
+}
+
+input, button {
+    max-width: 600px;
+    max-height: 100px;
+}
