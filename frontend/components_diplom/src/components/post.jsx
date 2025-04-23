@@ -11,7 +11,7 @@ function Post({postData, zxc}) {
           </strong>
   
           <div>
-            {props.post.postData}
+            {postData}
           </div>
         </div>
         </div>
