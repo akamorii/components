@@ -57,7 +57,7 @@ const ViewHead = ({ onSortChange }) => {
                 <option value="value5">n-1</option>
             </MySelect>
 
-            <Mybutton
+            <button
                 style={{
                     width: '180px',
                     height: '30px',
@@ -68,7 +68,7 @@ const ViewHead = ({ onSortChange }) => {
                 onClick={() => setModalVisible(true)}
             >
                 Добавить элемент
-            </Mybutton>
+            </button>
 
             <Modal visible={modalVisible} onClose={() => setModalVisible(false)}>
                 <h2>Добавить новый элемент</h2>
@@ -78,9 +78,9 @@ const ViewHead = ({ onSortChange }) => {
                 <MyInput name="count" value={form.count} onChange={handleInputChange} placeholder="Количество" type="number" />
                 <MyInput name="date" value={form.date} onChange={handleInputChange} placeholder="Дата" />
                 
-                <Mybutton onClick={submitData} style={{ marginTop: '10px' }}>
+                <button onClick={submitData} style={{ marginTop: '10px', color:'white' }}>
                     Отправить
-                </Mybutton>
+                </button>
             </Modal>
         </div>
     );

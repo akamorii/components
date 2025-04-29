@@ -100,15 +100,15 @@ const AsidePanel = () => {
 
     return (
         <div className='aside'>
-            <h3>📊 Статистика</h3>
+            <h3>Статистика</h3>
             <p>Всего позиций: <strong>{totalItems}</strong></p>
             <p>Общее количество: <strong>{totalCount}</strong></p>
-            <button onClick={fetchStats} className="recalc-btn">🔄 Пересчитать</button>
+            <button onClick={fetchStats} className="recalc-btn">Пересчитать</button>
 
-            <h4>📈 Построить график:</h4>
-            <button className="graph-btn" onClick={() => { setGraphType('bar'); setModalVisible(true); }}>📊 Столбчатый</button>
-            <button className="graph-btn" onClick={() => { setGraphType('line'); setModalVisible(true); }}>📈 Линейный</button>
-            <button className="graph-btn" onClick={() => { setGraphType('pie'); setModalVisible(true); }}>🥧 Круговой</button>
+            <h4>Построить график:</h4>
+            <button className="graph-btn" onClick={() => { setGraphType('bar'); setModalVisible(true); }}>Столбчатый</button>
+            <button className="graph-btn" onClick={() => { setGraphType('line'); setModalVisible(true); }}>Линейный</button>
+            <button className="graph-btn" onClick={() => { setGraphType('pie'); setModalVisible(true); }}>Круговой</button>
 
             <Modal visible={modalVisible} onClose={() => setModalVisible(false)}>
                 <h2>График по дате</h2>

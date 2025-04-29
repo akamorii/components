@@ -17,7 +17,8 @@ const DataViewWindow = () => {
         2: '15%',
         3: '20%',
         4: '10%',
-        5: '25%'
+        5: '20%',
+        6: '5%'
     };
 
     const applySort = (storage, type) => {

@@ -52,6 +52,7 @@
   background-color: #454545;
   width: 90%;
   height: 95%;
+  max-height: 100vh;
 }
 .header {
   display: flex;
